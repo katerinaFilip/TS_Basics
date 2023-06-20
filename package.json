@@ -1,0 +1,18 @@
+{
+  "name": "ts_basics",
+  "version": "1.0.0",
+  "description": "TypeScript basics",
+  "main": "index.js",
+  "scripts": {
+    "ts-run": "npx ts-node testFile.ts",
+    "js-run": "node testFile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5"
+  }
+}
