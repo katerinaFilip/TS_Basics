@@ -25,4 +25,20 @@ export default class Community {
     getUserByEmail(email: string) {
         return this.users.find(user => user.email === email);
     }
+
+    getUserByPhoneNumber(phoneNumber: string) {
+        return this.users.find(user => user.phone === phoneNumber);
+    }
+
+    getUsersBySurname(surname: string) {
+        return this.users.filter(user => user.name.split(' ').at(1) === surname);
+    }
+
+    getWebsitesByDomainZone(domainZone: string) {
+        return this.users.filter(user => user.website.split('.').at(-1) === domainZone).map(user => user.website);
+    }
+
+    getAddressesByCity(city: string) {
+        return this.users.filter(user => user.address.city === city).map(user => user.address);
+    }
 }

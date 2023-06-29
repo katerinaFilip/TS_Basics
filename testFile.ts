@@ -1,6 +1,7 @@
 import Community from "./community";
+import FileWriter from "./file.writer";
 
 const community = new Community()
 community.initialize().then(() => {
-    console.log(community.getUserByEmail('Rey.Padberg@karina.biz'));
+    FileWriter.writeData(community.getUsersBySurname('DuBuque'));
 });
