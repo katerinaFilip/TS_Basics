@@ -15,4 +15,15 @@ export default class Tests {
             return "OK";
         } return "ERROR";
     }
+
+    static async testInvalidEmail() {
+        const email = 'Shanna@melissa111.tv';
+        const community = new Community();
+
+        await community.initialize();
+        const recievedUser = community.getUserByEmail(email);
+        if (recievedUser === undefined) {
+            return "OK";
+        } return "ERROR";
+    }
 }
