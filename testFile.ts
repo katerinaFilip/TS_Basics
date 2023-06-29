@@ -1,7 +1,3 @@
-import Community from "./community";
-import FileWriter from "./file.writer";
+import Tests from "./tests";
 
-const community = new Community()
-community.initialize().then(() => {
-    FileWriter.writeData(community.getUsersBySurname('DuBuque'));
-});
+Tests.testValidEmail().then(result => console.log(result));
