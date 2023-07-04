@@ -4,15 +4,24 @@
   "description": "TypeScript basics",
   "main": "index.js",
   "scripts": {
+    "test": "jest test-jest/community.spec.ts",
     "ts-run": "npx ts-node testFile.ts",
     "js-run": "node testFile.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^3.3.1"
+    "@types/chai": "^4.3.5",
+    "@types/jest": "^29.5.2",
+    "chai": "^4.3.7",
+    "jest": "^29.6.0",
+    "mocha": "^10.2.0",
+    "node-fetch": "^3.3.1",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
-    "@types/node": "^20.2.5"
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.3.3",
+    "ts-jest": "^29.1.1"
   }
 }
